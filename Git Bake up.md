@@ -74,5 +74,11 @@ git push -u origin main
 
    2. push
 
+      - `git push` : 원격 저장소로 연결
+      - `git push --set-upstream origin master` : 어떤 원격 저장소와 연결할지 정함
+        - Username/Password : 인증을 위해 github 사용자의 아이디/비밀번호 입력
+
+      
+
    
 
