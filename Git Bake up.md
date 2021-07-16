@@ -45,9 +45,9 @@
 
 
 
-## 4. 원격 저장소와 연결
+## 4. 원격 저장소와 연결 및 push
 
-> HTTP 방식을 이용하여 원격 저장소와 연결하는 방법
+> HTTP 방식을 이용하여 지역 저장소와 원격 저장소와 연결 및 push
 
 1. 저장소 생성 후 하단 내용 확인
 
@@ -59,26 +59,57 @@ git branch -M main
 git push -u origin main
 ```
 
-2. 명령어
-   1. Local -> Remote 연결
+2. Local -> Remote 연결
 
-      - `git remote add[원격 저장소 별명][원격 저장소 주소(HTTP)]` : 원격 저장소 주소와 연결시키는 명령어 
+- `git remote add[원격 저장소 별명][원격 저장소 주소(HTTP)]` : 원격 저장소 주소와 연결시키는 명령어 
 
-        ``` 
-        git remote add origin https://github.com/phjoo/Git-baek-up.git
-        ```
+  ``` 
+  git remote add origin https://github.com/phjoo/Git-baek-up.git
+  ```
 
-      - `git remot` : 원격 저장소 연결 확인
+- `git remot` : 원격 저장소 연결 확인
 
-      - `git remot -v` : 원격 저장소 주소 확인 
+- `git remot -v` : 원격 저장소 주소 확인 
 
-   2. push
+3. push
 
-      - `git push` : 원격 저장소로 연결
-      - `git push --set-upstream origin master` : 어떤 원격 저장소와 연결할지 정함
-        - Username/Password : 인증을 위해 github 사용자의 아이디/비밀번호 입력
+- `git push` : 원격 저장소로 연결
+- `git push --set-upstream origin master` : 어떤 원격 저장소와 연결할지 정함
+  - Username/Password : 인증을 위해 github 사용자의 아이디/비밀번호 입력
 
-      
 
-   
+
+##  5. git clone
+
+> 원격 저장소에서 새로운 로컬 저장소로 작업물을 복제해서 복원하는 방법
+
+1. `git` 
+
+   - `init` :최초로 저장소 생성
+   - `clone` : 이미 있는 저장소를 복제
+
+2. clone 방법
+
+   1. github> 저장소(Git-baek-up) > code 클릭 > HTTPS 선택해서 복사
+   2. `git clone [원격 저장소]([mydir 저장소 이름])`: 원격 저장소에서 복제해서 지역 저장소 생성
+
+   - ([mydir 저장소 이름]) 원하는 디렉토리 이름 있을 경우
+
+
+
+## 6. git pull
+
+> 원격 저장소에서 지역 저장소로 땡겨오기
+
+- `git pull`
+
+< 여러명 작업시 방법>
+
+- git pull > git commit > git push 순서로 진행
+
+
+
+## 7. git과 오픈소스
+
+> 압축된 파일을 다운 받아서 사용 혹은 clone을 이용하여 소스 코드 사용 가능
 
